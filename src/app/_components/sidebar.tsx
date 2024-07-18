@@ -19,9 +19,9 @@ export const Sidebar = ({
   categories,
   searchParams,
 }: { categories: string[]; searchParams: string }) => {
+  const isDesktop = useMediaQuery('(min-width: 768px)');
   const [open, setOpen] = useState(false);
   const router = useRouter();
-  const isDesktop = useMediaQuery('(min-width: 768px)');
 
   if (isDesktop) {
     return (
