@@ -1,4 +1,5 @@
 import { Loader } from '@/components/loading';
+import { SaveCarts } from '@/hooks/save-carts';
 import { Suspense } from 'react';
 import { ProductList } from './_components/product-list';
 import { Sidebar } from './_components/sidebar';
@@ -25,6 +26,7 @@ export default async ({
       >
         <ProductList query={searchParams.search} />
       </Suspense>
+      <SaveCarts />
     </div>
   );
 };

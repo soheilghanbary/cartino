@@ -1,5 +1,7 @@
-import { SearchIcon, ShoppingCart } from 'lucide-react';
+'use client';
+import { SearchIcon } from 'lucide-react';
 import Link from 'next/link';
+import { CartList } from './cart-button';
 import { ModeToggle } from './mode-toggle';
 import { Button } from './ui/button';
 
@@ -14,9 +16,7 @@ export function Header() {
       <Button variant={'outline'} size={'icon'}>
         <SearchIcon className="size-4" />
       </Button>
-      <Button variant={'outline'} size={'icon'}>
-        <ShoppingCart className="size-4" />
-      </Button>
+      <CartList />
       <ModeToggle />
     </header>
   );

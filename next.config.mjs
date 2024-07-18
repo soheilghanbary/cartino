@@ -11,7 +11,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "webkade.storage.iran.liara.space",
+        hostname: "fakestoreapi.com",
       },
       {
         protocol: "https",

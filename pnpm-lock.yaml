@@ -116,6 +116,9 @@ importers:
       zod:
         specifier: ^3.23.8
         version: 3.23.8
+      zustand:
+        specifier: ^4.5.4
+        version: 4.5.4(@types/react@18.3.3)(react@19.0.0-rc-163365a0-20240717)
       zustand-valtio:
         specifier: ^0.4.0
         version: 0.4.0(valtio@1.13.2(@types/react@18.3.3)(react@19.0.0-rc-163365a0-20240717))
@@ -1915,6 +1918,21 @@ packages:
     peerDependencies:
       valtio: '>=1.0.0'
 
+  zustand@4.5.4:
+    resolution: {integrity: sha512-/BPMyLKJPtFEvVL0E9E9BTUM63MNyhPGlvxk1XjrfWTUlV+BR8jufjsovHzrtR6YNcBEcL7cMHovL1n9xHawEg==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      '@types/react': '>=16.8'
+      immer: '>=9.0.6'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      immer:
+        optional: true
+      react:
+        optional: true
+
 snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
@@ -3515,3 +3533,10 @@ snapshots:
   zustand-valtio@0.4.0(valtio@1.13.2(@types/react@18.3.3)(react@19.0.0-rc-163365a0-20240717)):
     dependencies:
       valtio: 1.13.2(@types/react@18.3.3)(react@19.0.0-rc-163365a0-20240717)
+
+  zustand@4.5.4(@types/react@18.3.3)(react@19.0.0-rc-163365a0-20240717):
+    dependencies:
+      use-sync-external-store: 1.2.0(react@19.0.0-rc-163365a0-20240717)
+    optionalDependencies:
+      '@types/react': 18.3.3
+      react: 19.0.0-rc-163365a0-20240717
