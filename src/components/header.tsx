@@ -1,7 +1,7 @@
 'use client';
 import { SearchIcon } from 'lucide-react';
 import Link from 'next/link';
-import { CartList } from './cart-button';
+import { CartList } from './cart-list';
 import { ModeToggle } from './mode-toggle';
 import { Button } from './ui/button';
 

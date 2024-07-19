@@ -43,18 +43,18 @@ const CartPayment = () => {
 
   return (
     <div className="space-y-4">
-      <div className="mt-4 text-right">
-        <strong>قیمت نهایی:</strong> {totalPrice.toFixed()} ریال
+      <div className="mt-4">
+        <strong>Total Price: </strong> ${totalPrice.toFixed()}
       </div>
       <button
         type="button"
         onClick={clear}
         className="text-rose-400 text-xs hover:underline"
       >
-        حذف همه
+        Clear
       </button>
       <Link href={'/payment'} className={cn('w-full', buttonVariants())}>
-        پرداخت کنید
+        Checkout
       </Link>
     </div>
   );
